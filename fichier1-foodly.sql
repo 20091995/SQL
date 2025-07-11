@@ -95,8 +95,14 @@ CREATE TABLE `utilisateur` (
 
 LOCK TABLES `utilisateur` WRITE;
 /*!40000 ALTER TABLE `utilisateur` DISABLE KEYS */;
-INSERT INTO `utilisateur` VALUES (1,'durantay','quentin','qentin@gmail.com',1),(2,'dupont','marie','marie@hotmail.fr',1),(3,'miller','vincent','vm@yahoo.com',2),(4,'zuckerberg','marc','marc@gmail.com',2),(5,'paul','pierre','pp@orange.fr',1),(6,'de vauclerc','lisa','lisadv@gmail.com',1),(7,'gluntig','éléonore','glunt@sfr.com',1),(8,'cavill','henry','henry@outlook.fr',2),(9,'hopper','lionel','hpp@gmail.com',2),(10,'tember','fabienne','fabienne@yopmail.com',1);
-/*!40000 ALTER TABLE `utilisateur` ENABLE KEYS */;
+INSERT INTO `utilisateur` 
+      VALUES (1,'durantay','quentin','qentin@gmail.com',1),
+              (2,'dupont','marie','marie@hotmail.fr',1),(3,'miller','vincent','vm@yahoo.com',2),
+              (4,'zuckerberg','marc','marc@gmail.com',2),(5,'paul','pierre','pp@orange.fr',1),(6,'de vauclerc','lisa','lisadv@gmail.com',1),
+              (7,'gluntig','éléonore','glunt@sfr.com',1),(8,'cavill','henry','henry@outlook.fr',2),
+              (9,'hopper','lionel','hpp@gmail.com',2),
+              (10,'tember','fabienne','fabienne@yopmail.com',1);
+        /*!40000 ALTER TABLE `utilisateur` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -122,7 +128,12 @@ CREATE TABLE `utilisateur_aliment` (
 
 LOCK TABLES `utilisateur_aliment` WRITE;
 /*!40000 ALTER TABLE `utilisateur_aliment` DISABLE KEYS */;
-INSERT INTO `utilisateur_aliment` VALUES (1,7),(1,3),(1,5),(2,2),(2,19),(2,14),(3,4),(3,15),(3,12),(1,17),(4,5),(4,4),(4,7),(5,1),(5,18),(5,3),(6,2),(6,12),(6,6),(7,16),(7,19),(7,1),(8,3),(8,5),(9,18),(9,9),(9,14),(10,16),(10,3);
+INSERT INTO `utilisateur_aliment` 
+      VALUES (1,7),(1,3),(1,5),(2,2),(2,19),(2,14),
+      (3,4),(3,15),(3,12),(1,17),(4,5),(4,4),(4,7),
+      (5,1),(5,18),(5,3),(6,2),(6,12),(6,6),(7,16),
+      (7,19),(7,1),(8,3),(8,5),(9,18),(9,9),(9,14),
+      (10,16),(10,3);
 /*!40000 ALTER TABLE `utilisateur_aliment` ENABLE KEYS */;
 UNLOCK TABLES;
 
